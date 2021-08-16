@@ -6,16 +6,16 @@ export const AppFooter = () => {
     return (
         <footer className="bg-dark">
        
-        <div className="container">
+        <div className="">
           <div className="space-top-2 space-bottom-1 space-bottom-lg-2 secondary-color" style={{padding:"0 10px"}}>
             <div className="row justify-content-lg-between">
               <div className="col-md-3">
                 <div className="mb-4">
-                  <h5 className="white-text">
+                  <h2 className="white-text">
                     Contact
                     Us
-                  </h5>
-                  <p className="white-text mt-4 text-center">Lorem ipsum dolor sit amet,Aenean vel purus ligula</p>
+                  </h2>
+                  <p className="white-text mt-4 text-left">Lorem ipsum dolor sit amet,Aenean vel purus ligula</p>
                 </div>
                 {/* <!-- End Logo -->
             <!-- Nav Link --> */}

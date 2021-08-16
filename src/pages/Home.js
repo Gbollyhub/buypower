@@ -1,28 +1,31 @@
 import React from 'react'
 import "../assets/css/home.css"
-import { useState } from "react";
-import { css } from "@emotion/react";
-import CircleLoader from "react-spinners/ClipLoader";
+// import { useState } from "react";
+// import { css } from "@emotion/react";
+// import CircleLoader from "react-spinners/ClipLoader";
+import Contactus from '../components/Contactus';
+import Why from '../components/Why';
 const Home = () => {
-    const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
-`;
-let [loading, setLoading] = useState(true);
-let [color, setColor] = useState("#ffffff");
+//     const override = css`
+//   display: block;
+//   margin: 0 auto;
+//   border-color: red;
+// `;
+// let [loading, setLoading] = useState(true);
+// let [color, setColor] = useState("#ffffff");
 
     return (
         
         <div className="mt-5">
 
-            <section className="landing">
-            <div className="sweet-loading">
+            <section className="landing mt-5">
+             
+            {/* <div className="sweet-loading">
       <button onClick={() => setLoading(!loading)}>Toggle Loader</button>
       <input value={color} onChange={(input) => setColor(input.target.value)} placeholder="Color of the loader" />
 
       <CircleLoader color={color} loading={loading} css={override} size={15} />
-    </div>
+    </div> */}
 <div className="container" style={{height:"100%"}}>
 <div className="row d-flex align-items-center" style={{height:"100%"}}>
     <div className="col-lg-6 ">
@@ -49,6 +52,8 @@ let [color, setColor] = useState("#ffffff");
               ><span></span></a>
           </div>
             </section>
+            <Why/>
+           <Contactus/> 
         </div>
     )
 }

@@ -17,14 +17,14 @@ const AppHeader = () => {
     return (
         <header
         id="header"
-        className="header  header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+        className="header  mb-4 header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
         
       >
         <div className="header-section header-color">
           <div id="logoAndNav" className="container">
-            <nav className="js-mega-menu navbar navbar-expand-lg">
+            <nav className="js-mega-menu navbar navbar-expand-lg mb-4">
               <Link className="navbar-brand" to="/" aria-label="Front">
-                <h3 className="white-text">LOGO</h3>
+                <h3 className="black-text">LOGO</h3>
               </Link>
 
               <button
@@ -69,10 +69,10 @@ const AppHeader = () => {
               <div id="navBar" className="collapse navbar-collapse">
                 <div className="navbar-body header-abs-top-inner">
                   <ul className="navbar-nav">
-                  <li className="hs-has-mega-menu navbar-nav-item">
+                  <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3">
                       <a
                         id="homeMegaMenu"
-                        className="hs-mega-menu-invoker"
+                        className="hs-mega-menu-invoker primary-text"
                         
                         href="."
                       
@@ -80,10 +80,10 @@ const AppHeader = () => {
                       Contact Us
                       </a>
                     </li>
-                    <li className="hs-has-mega-menu navbar-nav-item">
+                    <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3">
                       <a
                         id="homeMegaMenu"
-                        className="hs-mega-menu-invoker "
+                        className="hs-mega-menu-invoker primary-text "
                         
                         href="."
                       
@@ -91,10 +91,10 @@ const AppHeader = () => {
                       Buy Units
                       </a>
                     </li>
-                    <li className="hs-has-mega-menu navbar-nav-item">
+                    <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3">
                       <a
                         id="homeMegaMenu"
-                        className="hs-mega-menu-invoker"
+                        className="hs-mega-menu-invoker primary-text "
                         
                         href="."
                       
@@ -102,10 +102,10 @@ const AppHeader = () => {
                      Log In
                       </a>
                     </li>
-                    <li className="hs-has-mega-menu navbar-nav-item">
+                    <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3">
                       <a
                         id="homeMegaMenu"
-                        className="hs-mega-menu-invoker btn-join "
+                        className="hs-mega-menu-invoker btn-join  bold-text"
                         
                         href="."
                       

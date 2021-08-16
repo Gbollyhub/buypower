@@ -1,0 +1,140 @@
+.why {
+  background-color: #f9f9f9;
+}
+.des {
+  border: 1px solid;
+  border-radius: 80px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.circular {
+  background-image: url(../img/ellipse.svg);
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 20px;
+}
+.svg1 {
+  background-image: url(../img/bulb.svg);
+  background-size: contain;
+  /* height: 50%; */
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 65%;
+  margin-left: -50px;
+  top: 65%;
+  margin-top: -50px;
+}
+.svg2 {
+  background-image: url(../img/bolt.svg);
+  background-size: contain;
+  /* height: 50%; */
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 65%;
+  margin-left: -50px;
+  top: 65%;
+  margin-top: -50px;
+}
+.svg3 {
+  background-image: url(../img/commission.svg);
+  background-size: contain;
+  /* height: 50%; */
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 65%;
+  margin-left: -50px;
+  top: 65%;
+  margin-top: -50px;
+}
+.svg4 {
+  background-image: url(../img/giftbox.svg);
+  background-size: contain;
+  /* height: 50%; */
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 65%;
+  margin-left: -50px;
+  top: 65%;
+  margin-top: -50px;
+}
+.text-head {
+  color: #2e2d2d;
+  cursor: pointer;
+}
+.figure {
+  display: inline-block;
+}
+.figure-text {
+  display: inline-block;
+}
+.svg1:hover,
+.svg2:hover,
+.svg3:hover,
+.svg4:hover,
+.circular:hover,
+.text-head:hover {
+  color: var(--primary-color);
+  filter: invert(48%) sepia(74%) saturate(548%) hue-rotate(334deg)
+    brightness(91%) contrast(88%);
+}
+
+.svg1:hover,
+.svg1:hover,
+.svg2:hover,
+.svg3:hover,
+.svg4:hover {
+  animation: bellshake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  backface-visibility: hidden;
+  transform-origin: top right;
+}
+
+@keyframes bellshake {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  85% {
+    transform: rotate(-10deg);
+  }
+  92% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media screen and (min-height: 789px) {
+  .figure {
+    display: block;
+  }
+  .figure-text {
+    display: block;
+  }
+}

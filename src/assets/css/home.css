@@ -1,5 +1,5 @@
 .landing {
-  background-image: url(../img/city.jpg);
+  background-image: url(../img/landing.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -92,8 +92,8 @@
   left: 50%;
   z-index: 2;
   display: inline-block;
-  -webkit-transform: translate(0, 13%);
-  transform: translate(0, 13%);
+  -webkit-transform: translate(0, -120%);
+  transform: translate(0, -120%);
   color: var(--text-color) !important;
   font: normal 400 20px/1 "Josefin Sans", sans-serif;
   letter-spacing: 0.1em;
@@ -102,4 +102,37 @@
 }
 .demo a:hover {
   opacity: 0.5;
+}
+.contactus {
+  background-image: url(../img/contact.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: auto;
+}
+.pwd-container {
+  position: relative;
+  /* width: 295px; */
+}
+
+/* .pwd-container input {
+  padding: 5px 30px 5px 10px;
+  font-size: 20px;
+} */
+
+.pwd-container img {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  right: 10px;
+  top: 35px;
+}
+.banner {
+  background-image: url(../img/register.png);
+  height: 20vh;
+  background-size: cover;
+
+  filter: brightness(50%);
+  /* background-color: black;
+  opacity: 0.5; */
 }
