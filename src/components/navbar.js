@@ -67,7 +67,7 @@ const AppHeader = () => {
             <div id="navBar" className="collapse navbar-collapse">
               <div className="navbar-body header-abs-top-inner">
                 <ul className="navbar-nav">
-                  <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3 mb-3">
+                  <li className="hs-has-mega-menu navbar-nav-item ml-5 mt-3 mb-3">
                     <a
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker primary-text"
@@ -76,7 +76,7 @@ const AppHeader = () => {
                       Contact Us
                     </a>
                   </li>
-                  <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3 mb-3">
+                  <li className="hs-has-mega-menu navbar-nav-item ml-5 mt-3 mb-3">
                     <a
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker primary-text "
@@ -85,7 +85,7 @@ const AppHeader = () => {
                       Buy Units
                     </a>
                   </li>
-                  <li className="hs-has-mega-menu navbar-nav-item ml-3 mt-3 mb-3">
+                  <li className="hs-has-mega-menu navbar-nav-item ml-5 mt-3 mb-3">
                     <a
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker primary-text "
@@ -94,7 +94,7 @@ const AppHeader = () => {
                       Log In
                     </a>
                   </li>
-                  <li className="hs-has-mega-menu navbar-nav-item ml-3">
+                  <li className="hs-has-mega-menu navbar-nav-item ml-5">
                     <a
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker btn-join  bold-text"

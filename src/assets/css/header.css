@@ -34,7 +34,9 @@
   margin: 5px;
   color: #fff;
 }
-
+.primary-text {
+  font-size: var(--small-font-size);
+}
 .nav-footer,
 .media {
   color: #fff !important;
