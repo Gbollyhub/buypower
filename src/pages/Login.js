@@ -1,46 +1,89 @@
-import React from 'react'
+import React, { useState } from "react";
 import almost from "../assets/img/almost.svg";
+import Arrows from "../assets/img/arrows.svg";
+
+import "../assets/css/home.css";
+import showpass from "../assets/img/showpass.svg";
+import hidepass from "../assets/img/hidepass.svg";
+import  "../assets/css/login.css";
 // import ServiceCard from "../components/ServiceCard";
 import "../assets/css/home.css"
 const Login = () => {
-    return (
-        <div
-              className="row d-flex align-items-center"
-              style={{ height: "100%" }}
-            >
-              <div className="col-lg-6 ">
-                <h1 className="landing-heading">
-                  Looking For A Great Value Of Electricity?
-                </h1>
-                <p className="landing-text mt-3">
-                  Lorem ipsum dolor sit amet,Aenean vel purus ligula
-                </p>
 
-                <div className="row mt-4 col-lg-12">
-                  {/* <input
-                    type="text"
-                    className="landing-input col-lg-8"
-                    placeholder="Input Meter Number"
-                  /> */}
-                  {/* <button
-                    className="landing-btn col-lg-2"
-                    onClick={() => {
-                      setShow((show = true));
-                    }}
+  const [pwd, setPwd] = useState("");
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
+  return (
+    <div>
+      <div className="banner-picture">
+        <div className="banner-cover">
+          <div className="banner-writeup">
+            <div className="banner-heading">
+              <div className="banner-header">Hey There, Glad you are back</div>
+              <div className="banner-sub">Lorem ipsum dolor sit amet,Aenean vel purus ligula,Lorem ipsum dolor sit amet,Aenean vel purus ligula</div>
+            </div>
+            <div className="banner-illustration">
+              <img src={Arrows} alt="" className="banner-illus"/>
+            </div>
+          </div>
+          <div className="banner-form">
+            <div className="banner-form-div">
+              <div className="banner-form-div-header">Hello</div>
+              <div className="banner-form-div-header">Please Login</div>
+              <br />
+              <form>
+
+                <div className="form-group mt-3">
+                  <label
+                    className="formlabel black-text"
+
                   >
-                    Enter
-                  </button> */}
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="formGroupExampleInput"
+                    placeholder=""
+                  />
+                </div>{" "}
+                <div className="form-group pwd-container mt-3">
+                  <label
+                    className="formlabel black-text"
+
+                  >
+                    Password
+                  </label>
+                  <input
+                    className="form-control"
+                    name="pwd"
+                    placeholder=""
+                    type={isRevealPwd ? "text" : "password"}
+                    value={pwd}
+                    onChange={(e) => setPwd(e.target.value)}
+                  />
                   <img
-                    src={almost}
                     alt=""
-                    className="img-fluid"
-                    style={{ width: "60%" }}
+                    title={isRevealPwd ? "Hide password" : "Show password"}
+                    src={isRevealPwd ? hidepass : showpass}
+                    onClick={() => setIsRevealPwd((prevState) => !prevState)}
                   />
                 </div>
-              </div>
-              
+                
+                <div className="center mt-5">
+                  <button
+                    className="btn-home btn-join bold-text"
+                    style={{ background:'#DE7949',border:'none', color:'white', width:'100%', padding: "10px 100px" }}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </form>
             </div>
-    )
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Login

@@ -17,7 +17,7 @@ const AppHeader = () => {
   return (
     <header
       id="header"
-      className="header  mb-4 header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+      className="header-control header  mb-4 header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
     >
       <div className="header-section header-color">
         <div id="logoAndNav" className="container">
@@ -71,28 +71,28 @@ const AppHeader = () => {
                     <a
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker primary-text"
-                      href="."
+                      href="/#contact-section"
                     >
                       Contact Us
                     </a>
                   </li>
                   <li className="hs-has-mega-menu navbar-nav-item ml-5 mt-3 mb-3">
-                    <a
+                    <Link to='/'
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker primary-text "
                       href="."
                     >
                       Buy Units
-                    </a>
+                    </Link>
                   </li>
                   <li className="hs-has-mega-menu navbar-nav-item ml-5 mt-3 mb-3">
-                    <a
+                    <Link to='/login'
                       id="homeMegaMenu"
                       className="hs-mega-menu-invoker primary-text "
-                      href="."
-                    >
+                      href=".">
+                
                       Log In
-                    </a>
+                    </Link>
                   </li>
                   <li className="hs-has-mega-menu navbar-nav-item ml-5">
                     <a

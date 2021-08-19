@@ -6,7 +6,7 @@ const Contactus = () => {
   const [pwd, setPwd] = useState("");
   const [isRevealPwd, setIsRevealPwd] = useState(false);
   return (
-    <section className="mt-5">
+    <section className="mt-5" id="contact-section">
       <div className="banner center">
         <div>
           <h1 className="">Register To Get FREE Unit</h1>
