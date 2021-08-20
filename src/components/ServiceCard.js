@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "../assets/css/servicecard.css";
 import {Link} from 'react-router-dom'
 import ibedc from "../assets/img/IBEDC.png"
-
+import aedc from "../assets/img/AEDC.png"
 const ServiceCard = () => {
 
   const providers = [
@@ -13,8 +13,8 @@ const ServiceCard = () => {
     },
     {
       'id': 2,
-      'title': 'IBEDC',
-      'img_src': ibedc
+      'title': 'AEDC',
+      'img_src': aedc
     },
     {
       'id': 3,

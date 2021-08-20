@@ -1,6 +1,4 @@
 import React from 'react'
-import ibedc from "../assets/img/IBEDC.png"
-
 import card from "../assets/img/card.svg"
 import ussd from "../assets/img/ussd.svg"
 import bank from "../assets/img/bank.svg"
@@ -10,7 +8,7 @@ const ConfrimDetailsBills = (props) => {
       <>
                          <div className="bills-row">
                <div className="bills-col">
-               <img src={ibedc} alt="" className="form-paybills"/>
+               <img src={props.providerImage} alt="" className="form-paybills"/>
                <div style={{color:"#5B6E89"}}>Ibadan Electric</div>
                </div>
                <div className="bills-col">

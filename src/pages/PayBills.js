@@ -1,19 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import almost from "../assets/img/almost.svg";
-import Arrows from "../assets/img/arrows.svg";
-
 import "../assets/css/home.css";
-import showpass from "../assets/img/showpass.svg";
-import hidepass from "../assets/img/hidepass.svg";
-// import ServiceCard from "../components/ServiceCard";
 import "../assets/css/paybills.css"
-
 import EnterDetailsBills from '../components/EnterDetailsBills'
 import ConfirmDetailsBills from '../components/ConfirmDetailsBills'
+import {useParams} from 'react-router-dom'
+import ibedc from "../assets/img/IBEDC.png"
+import aedc from "../assets/img/AEDC.png"
 const PayBills = () => {
 
-  const [isfilledForm, setIsFilledForm] = useState(false);
+  let { id } = useParams(); 
 
+  const providers = [
+    {
+      'id': 1,
+      'title': 'IBEDC',
+      'img_src': ibedc
+    },
+    {
+      'id': 2,
+      'title': 'AEDC',
+      'img_src': aedc
+    },
+    {
+      'id': 3,
+      'title': 'IBEDC',
+      'img_src': ibedc
+    },
+    {
+      'id': 4,
+      'title': 'IBEDC',
+      'img_src': ibedc
+    }
+  ]
+
+  const [isfilledForm, setIsFilledForm] = useState(false);
+  const [providerImage, setProviderImage] = useState();
+
+  useEffect(() => {
+  const provider = providers.find( (result) => { return result.id == id }).img_src
+  setProviderImage(provider)
+  }, [])
 
   function goToConfirmScreen(){
    setIsFilledForm(true)
@@ -38,7 +65,7 @@ const PayBills = () => {
           <div className="banner-form">
             <div className="banner-form-div" style={{ height: 'auto'}}>
               {
-                isfilledForm ?  <ConfirmDetailsBills goToFormScreen={goToFormScreen} /> : <EnterDetailsBills goToConfirmScreen = {goToConfirmScreen}/>
+                isfilledForm ?  <ConfirmDetailsBills providerImage={providerImage} goToFormScreen={goToFormScreen} /> : <EnterDetailsBills providerImage={providerImage} goToConfirmScreen = {goToConfirmScreen}/>
               }
                
                
