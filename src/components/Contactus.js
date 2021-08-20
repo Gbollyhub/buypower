@@ -6,13 +6,13 @@ const Contactus = () => {
   const [pwd, setPwd] = useState("");
   const [isRevealPwd, setIsRevealPwd] = useState(false);
   return (
-    <section className="mt-5" id="contact-section">
+    <section style={{padding: "0"}} id="contact-section">
       <div className="banner center">
-        <div>
-          <h1 className="">Register To Get FREE Unit</h1>
+        <div className="banner-img-cover">
+          <h1 style={{color:'white'}}>Register To Get FREE Unit</h1>
         </div>
       </div>
-      <div className="contactus container mt-4">
+      <div className="contactus container mt-4" style={{ paddingBottom: "30px"}}>
         <div className="center">
           <form className="col-lg-4 ">
             <p

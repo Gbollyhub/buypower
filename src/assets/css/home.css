@@ -4,6 +4,21 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: auto;
+  display: -webkit-box; 
+  display: -webkit-flex; 
+  display: -ms-flexbox; 
+  display: flex; 
+  -webkit-box-pack: start; 
+  -webkit-justify-content: flex-start; 
+  -ms-flex-pack: start; 
+  justify-content: flex-start; 
+  -webkit-flex-wrap: wrap; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 8% 0 8%;
+}
+.meter-heading{
+  flex: 0 50%;
 }
 .landing-heading {
   color: var(--white-color);
@@ -14,35 +29,77 @@
   color: var(--white-color);
   text-align: left;
 }
+
+.meter-row{
+  margin-top: 20px;
+ display: flex;
+width: 100%;
+justify-content: flex-start !important; 
+}
+.meter-col-1{
+  flex-basis: 70%;
+  justify-content: flex-start; 
+  text-align: left !important;
+}
+.meter-col-2{
+  flex-basis: 30%;
+  padding-left: 10px;
+  justify-content: flex-start; 
+  text-align: left !important;
+  }
+
 .landing-input {
-  border-radius: 20px 0 0 20px;
+  border-radius: 40px 0 0 40px;  
+  outline: none !important;
+  font-size: 10px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+ background: white;
+ padding:20px 30px;
+ height:75px;
+width: 100%;
+ font-size: 17px;
+ font-weight: 600;
+}
+
+
+
+.landing-input::placeholder {
+  color: #b5b5b5;
+font-size: 17px;
+font-weight: 600;
 }
 
 .landing-btn {
   background-color: var(--primary-color);
   color: var(--white-color);
-  padding: 15px 20px;
-  border-radius: 0 20px 20px 0;
-  margin-left: 5px;
+  border-radius: 0 40px 40px 0;
+  
   font-weight: 600;
+  height:75px;
+  line-height: 75px;
+  text-align: center;
+  width: 100%;
 }
 #section10 a {
   padding-top: 60px;
 }
 #section10 a span {
   position: absolute;
-  top: 0;
+ 
   left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
+  width: 20px;
+  height: 40px;
+ 
   border: 2px solid var(--text-color);
   border-radius: 50px;
   box-sizing: border-box;
 }
 #section10 a span::before {
   position: absolute;
-  top: 10px;
+ 
   left: 50%;
   content: "";
   width: 6px;
@@ -129,10 +186,124 @@
 }
 .banner {
   background-image: url(../img/register.png);
-  height: 20vh;
+  height: 30vh;
   background-size: cover;
-
-  filter: brightness(50%);
   /* background-color: black;
   opacity: 0.5; */
+}
+
+.banner-img-cover{
+  background: rgba(30, 30, 30, 0.646);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 991px) {
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .banner-img-cover{
+    background: rgba(30, 30, 30, 0.646);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+  }
+
+  .landing {
+    background-image: url(../img/landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 8% 0 8%;
+  }
+
+  .meter-heading{
+    flex: 0 100%;
+  }
+  .landing-heading {
+    color: var(--white-color);
+    text-align: center;
+    font-size: var(--biggest-font-size);
+  }
+  .landing-text {
+    color: var(--white-color);
+    text-align: center;
+  }
+  
+  .meter-row{
+    margin-top: 20px;
+   display: flex;
+  width: 100%;
+  justify-content: flex-start !important; 
+  }
+  .meter-col-1{
+    flex-basis: 70%;
+    justify-content: flex-start; 
+    text-align: left !important;
+  }
+  .meter-col-2{
+    flex-basis: 30%;
+    padding-left: 10px;
+    justify-content: flex-start; 
+    text-align: left !important;
+    }
+  
+  .landing-input {
+    border-radius: 20px 0 0 20px;  
+    outline: none !important;
+    font-size: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+   background: white;
+   padding:15px 15px;
+   height:50px;
+  width: 100%;
+   font-size: 14px;
+   font-weight: 600;
+  }
+  
+  
+  .landing-input::placeholder {
+    color: #b5b5b5;
+  font-size: 14px;
+  font-weight: 600;
+  }
+  
+  .landing-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 0 40px 40px 0;
+    
+    font-weight: 600;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+
 }
