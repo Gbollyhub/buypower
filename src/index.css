@@ -128,7 +128,7 @@ body {
   font-family: var(--body-font) !important;
   font-size: var(--normal-font-size);
   background-color: var(--body-color) !important;
-  color: var(--text-color) !important;
+  color: var(--text-color);
   line-height: 1.6;
 
   background-repeat: repeat;

@@ -23,7 +23,8 @@
 .landing-heading {
   color: var(--white-color);
   text-align: left;
-  font-size: var(--biggest-font-size);
+  font-size: 3.5em;
+  line-height: 50px;
 }
 .landing-text {
   color: var(--white-color);

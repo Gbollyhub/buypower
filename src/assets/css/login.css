@@ -36,10 +36,13 @@
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 20px;
+    color: white;
+    line-height: 40px;
 }
 
 .banner-sub{
     font-size: 14px;
+    color: white;
 }
 
 .banner-form{

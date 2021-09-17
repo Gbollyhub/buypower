@@ -8,12 +8,15 @@ import hidepass from "../assets/img/hidepass.svg";
 import  "../assets/css/bills.css";
 // import ServiceCard from "../components/ServiceCard";
 import "../assets/css/home.css"
+import AppHeader from '../components/navbar.js';
+import { AppFooter } from "../components/footer.js";
 const Login = () => {
 
   const [pwd, setPwd] = useState("");
   const [isRevealPwd, setIsRevealPwd] = useState(false);
   return (
     <div>
+        <AppHeader></AppHeader>
       <div className="banner-picture-bills">
         <div className="banner-cover">
           <div className="banner-writeup">
@@ -30,6 +33,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <AppFooter></AppFooter>
     </div>
   )
 }

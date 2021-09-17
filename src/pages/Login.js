@@ -6,14 +6,17 @@ import "../assets/css/home.css";
 import showpass from "../assets/img/showpass.svg";
 import hidepass from "../assets/img/hidepass.svg";
 import  "../assets/css/login.css";
+import AppHeader from '../components/navbar.js';
 // import ServiceCard from "../components/ServiceCard";
 import "../assets/css/home.css"
+import { AppFooter } from "../components/footer.js";
 const Login = () => {
 
   const [pwd, setPwd] = useState("");
   const [isRevealPwd, setIsRevealPwd] = useState(false);
   return (
     <div>
+        <AppHeader></AppHeader>
       <div className="banner-picture">
         <div className="banner-cover">
           <div className="banner-writeup">
@@ -82,6 +85,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <AppFooter></AppFooter>
     </div>
   )
 }

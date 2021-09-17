@@ -7,6 +7,8 @@ import ConfirmDetailsBills from '../components/ConfirmDetailsBills'
 import {useParams} from 'react-router-dom'
 import ibedc from "../assets/img/IBEDC.png"
 import aedc from "../assets/img/AEDC.png"
+import AppHeader from '../components/navbar.js';
+import { AppFooter } from "../components/footer.js";
 const PayBills = () => {
 
   let { id } = useParams(); 
@@ -51,6 +53,7 @@ const PayBills = () => {
 
   return (
     <div>
+        <AppHeader></AppHeader>
       <div className="banner-picture-paybills">
         <div className="banner-cover">
         <div className="banner-writeup">
@@ -73,6 +76,7 @@ const PayBills = () => {
           </div>
         </div>
       </div>
+      <AppFooter></AppFooter>
     </div>
   )
 }

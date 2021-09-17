@@ -11,6 +11,8 @@ import Why from "../components/Why";
 
 // @ts-ignore
 //import { Fade } from "react-reveal/Fade";
+import AppHeader from '../components/navbar.js';
+import { AppFooter } from "../components/footer.js";
 const Home = () => {
   //     const override = css`
   //   display: block;
@@ -25,6 +27,7 @@ const Home = () => {
 
   return (
     <div>
+        <AppHeader></AppHeader>
       <section className="landing">
         {/* <div className="sweet-loading">
       <button onClick={() => setLoading(!loading)}>Toggle Loader</button>
@@ -41,6 +44,7 @@ const Home = () => {
       </section>
       <Why />
       <Contactus />
+      <AppFooter></AppFooter>
     </div>
   );
 };
